@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Horror Pokemon</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link href="./menu/rpgui.min.css" rel="stylesheet" type="text/css" >
+    <style>
+        body
+        {
+            background: black;
+        }
+
+        .rpgui-container {
+            width:580px;
+            height: 470px;
+        }
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+</head>
+
+<body>
+
+<div class="rpgui-content">
+
+        <div class="rpgui-container framed" style="margin-top: 130px !important; margin:auto;">
+            <h1>Main Menu</h1>
+            <hr>
+
+            <form>
+            <button formaction="./game/game.html" class="rpgui-button" type="submit" style="width:100%;"><span>Play</span></button>
+        </form>
+
+        <form>
+        <button formaction="./menu/How-to-play.html" class="rpgui-button golden" type="submit" style="width:100%;"><br><span>How to Play</span></button>
+        </form>
+
+            <form>
+            <button formaction="./menu/1-developer.html" class="rpgui-button golden" type="submit" style="width:100%;"><br><span>About the Developers</span></button>
+            </form>
+
+        <div class="row">
+            <div class="rpgui-container framed-golden column" style="width:170px; height:170px; background: url('https://cdn.picrew.me/shareImg/org/202303/82375_Ky2rXbbN.png');  background-size: 100% 100%;">
+            </div>
+            <div class="rpgui-container framed-golden column" style="width:170px; height:170px; background: url('https://cdn.picrew.me/shareImg/org/202303/82375_H1vlZ54Z.png');  background-size: 100% 100%;">
+            </div>
+            <div class="rpgui-container framed-golden column" style="width:170px; height:170px; background: url('https://cdn.picrew.me/shareImg/org/202303/82375_8Rv9X0q1.png');  background-size: 100% 100%;">
+            </div>
+        </div>
+
+        </div>
+	</div>
+</body>

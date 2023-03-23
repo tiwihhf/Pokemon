@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  overflow:hidden;
+}
+
+/* GAME OVER */
+#gameOver {
+  /* POSITIONING */
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  /* PROPERTIES */
+  background-color:black;
+  padding:2em;
+  z-index:1000;
+  color:white;
+ 
+  /* FONT */
+  font-size:5em;
+  font-family: 'Press Start 2P', cursive;
+  text-align:center;
+}
+
+/* DIALOGUE */
+#dialogueBar {
+  /* POSITIONING */
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  /* PROPERTIES */
+  height:20vh;
+  background-color:#959a3a;
+  padding:2em;
+  /* FONT */
+  font-size:1em;
+  font-family: 'Press Start 2P', cursive;
+  color:#dee19b;
+}
+
+/* BATTLE OVERLAY */
+#overlay {
+  width:100vw;
+  height:100vh;
+  background-color:black;
+  opacity:0;
+  pointer-events:none;
+  position:absolute;
+  z-index:10;
+}
+
+/* ATTACK INTERFACE */
+#attackUI {
+  /* POSITIONING */
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  /* PROPERTIES */
+  height:30vh;
+  background-color:#959a3a;
+  border-top: 5px solid black;
+  /* DISPLAY */
+  display:grid;
+  grid-template-columns:65% 35%;
+}
+
+/* BUTTONS */
+.attackBtns {
+  /* GRID */
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+}
+
+button {
+  border:none;
+  font-size:1.5em;
+  background-color:#959a3a;
+  font-family: 'Press Start 2P', cursive;
+  color:#dee19b;
+}
+
+button:hover {
+  background-color:#686c20;
+  cursor:pointer;
+}
+
+/* ATTACK TYPE */
+.type {
+  border-left:5px solid black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:2em;
+  font-family: 'Press Start 2P', cursive;
+  background-color:black;
+  text-decoration:line-through;
+  color:#880808;
+}
+
+/* HEALTH BAR */
+.serpentisHealth {
+  /* POSITIONING */
+  position: absolute;
+  top:2em;
+  left:2em;
+  width:250px;
+  /* PROPERTIES */
+  background-color:#959a3a;
+  border:3px solid black;
+  padding:2em;
+}
+
+.barOne {
+  height:0.55em;
+  background-color:gray;
+}
+
+.barTwo {
+  height:0.55em;
+  background-color:#880808;
+  position:relative;
+  top:-0.55em;
+}
+
+/* SERPENTIS HEALTH BAR */
+.serpentisHealth h3 {
+  font-size:1em;
+  font-family: 'Press Start 2P', cursive;
+  color:#dee19b;
+  margin-bottom:1em;
+}
+
+/* IGNIS HEALTH BAR */
+.ignisHealth {
+  /* POSITIONING */
+  position: absolute;
+  bottom:13em;
+  right:2em;
+  width:250px;
+  /* PROPERTIES */
+  background-color:#959a3a;
+  border:3px solid black;
+  padding:2em;
+}
+
+.ignisHealth h3 {
+  font-size:1em;
+  font-family: 'Press Start 2P', cursive;
+  color:#dee19b;
+  margin-bottom:1em;
+}
+
+/* BATTLE DIALOGUE */
+#battleDialogue {
+  /* POSITIONING */
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  /* PROPERTIES */
+  height:30vh;
+  background-color:#959a3a;
+  padding:2em;
+  display:none;
+  /* FONT */
+  font-size:1em;
+  font-family: 'Press Start 2P', cursive;
+  color:#dee19b;
+}

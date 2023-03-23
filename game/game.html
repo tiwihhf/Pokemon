@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beta Game</title>
+  <!-- LINKS -->
+  <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <div id="gameCanvas">
+    <!-- GAME OVER -->
+    <div id="gameOver"></div>
+    <!-- OVERLAY -->
+    <div id="overlay"></div>
+    <!-- DIALOGUE -->
+    <div id="dialogueBar"></div>
+    <!-- GAME -->
+    <canvas id="canvas"></canvas>
+    <!-- UI -->
+    <div id="ui">
+      <!-- ATTACK BAR -->
+      <div id="attackUI">
+        <div id="battleDialogue"></div>
+        <div class="attackBtns">
+          <button>Ram</button>
+          <button>Cimori</button>
+        </div>
+        <h3 class="type">Type</h3>
+      </div>
+      <!-- HEALTH BAR -->
+      <div id="healthUI">
+        <!-- ENEMY POKEMON -->
+        <div class="serpentisHealth">
+          <h3>Serpentis</h3>
+          <div class="healthBar">
+            <div class="barOne"></div>
+            <div class="barTwo" id="serpBar"></div>
+          </div>
+        </div>
+
+        <!-- PLAYER POKEMON -->
+        <div class="ignisHealth">
+          <h3>Ignis</h3>
+          <div class="healthBar">
+            <div class="barOne"></div>
+            <div class="barTwo" id="ignBar"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LINKS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./values.js"></script>
+  <script src="./charWalk.js"></script>
+  <script src="./collisions.js"></script>
+  <script src="./enemy.js"></script>
+  <script src="./attacks.js"></script>
+  <script src="./dialogue.js"></script>
+  <script src="./battleActivation.js"></script>
+  <script src="./game.js"></script>
+</body>
+</html>
